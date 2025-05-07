@@ -13,6 +13,15 @@ app.get('/',(req, res) => {
 app.get('/home',(req, res) => {
     res.send('back with express my love  love love love for backend');
 })
+app.get('/homeii',(req, res) => {
+    res.send('back with express my love  love love love for backend');
+})
+app.get('/homee',(req, res) => {
+    res.send('back with express my love  love love love for backend');
+})
+app.get('/homeee',(req, res) => {
+    res.send('back with express my love  love love love for backend');
+})
 
 app.listen(port, () => {
     console.log(`Server is up and running on port ${port}`);
