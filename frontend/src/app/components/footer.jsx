@@ -8,6 +8,11 @@ const footer = () => {
       <div>home</div>
       <div>Login/signup</div>
       <div>Terms and conditions</div>
+      <div>Terms and conditions</div>
+      <div>Terms and conditions</div>
+      <div>Terms and conditions</div>
+      <div>Terms and conditions</div>
+      <div>Terms and conditions</div>
     </>
   );
 };

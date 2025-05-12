@@ -22,6 +22,12 @@ app.get("/homee", (req, res) => {
 app.get("/homeee", (req, res) => {
   res.send("back with express my love  love love love for backend");
 });
+app.get("/contact", (req, res) => {
+  res.send("back with express my love  love love love for backend");
+});
+app.get("/about", (req, res) => {
+  res.send("back with express my love  love love love for backend");
+});
 
 app.listen(port, () => {
   console.log(`Server is up and running on port ${port}`);
