@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import authapi from "../../utils/authapi";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
+//import { useRouter } from "next/router";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
