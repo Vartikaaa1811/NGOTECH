@@ -16,7 +16,7 @@ exports.register = async (req, res) =>{
         user = new User({ name, email, password: hashedPassword});
         await user.save();
 
-        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
+        const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET);
         expiresIn : '1d',
         res.status(201).json({token, user: {id: user._id, name:user.name, email: user.email } });
         
@@ -26,6 +26,17 @@ exports.register = async (req, res) =>{
     }
 };
 
+exports.verifyAdmin = async(req, res, next) =>{
+    const token = req.headers.authorization?.split(' ')[1];
+    if(!token) return res.status(401).json({message: "Access denied"});
+
+    jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+        if(err) return res.status(403).json({message: "Invalid token" });
+        if(decoded.role !== "admin") return res.status(403).json({message: "Access denied"});
+        req.user = decoded;
+        next();
+    });
+}
 
 exports.login = async(req, res) =>{
     const {email, password} = req.body;
@@ -48,4 +59,13 @@ exports.login = async(req, res) =>{
         res.status(500).send(err.message || "Server error");
     }
 
+}
+
+exports.logout = async(req, res) =>{
+    try{
+
+
+    }catch(err){
+        res.status(500).send(err.message || "Server error");
+    }
 }

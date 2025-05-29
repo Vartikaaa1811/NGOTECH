@@ -16,7 +16,7 @@ export default function Signup() {
     try {
       const res = await authapi.post("/auth/register", form);
       alert("Registered successfully!");
-      router.push("/login");
+      router.push("/pages/login");
     } catch (err) {
       alert(err.response?.data?.msg || "Error");
     }

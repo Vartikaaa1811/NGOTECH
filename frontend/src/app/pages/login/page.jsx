@@ -16,6 +16,13 @@ export default function Login() {
     try {
       const res = await authapi.post("/auth/login", form);
       localStorage.setItem("token", res.data.token);
+      const decoded = JSON.parse(atob(res.data.token.split(".")[1]));
+      if(decoded.role === "admin") {
+        router.push("/admin/dashboard");
+      }else{
+        router.push("/");
+      }
+      
       alert("Logged in successfully!");
       router.push("/");
     } catch (err) {
