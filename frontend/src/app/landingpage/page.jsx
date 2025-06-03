@@ -7,9 +7,9 @@ const page = () => {
   return (
     <>
       <div>
-        */ navbar /*
+       
         <Navbar />
-        <div>*/ landing page /*</div>
+        <div></div>
         <div>
           <Footer />
         </div>
