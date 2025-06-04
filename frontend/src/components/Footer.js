@@ -5,63 +5,71 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="px-8 py-10 bg-gray-950 text-white">
+      <div className="px-8 py-10 bg-gray-500 text-white">
         <div className=" grid grid-cols-2 md:grid-cols-5 gap-5 max-w-7xl mx-auto ">
-          <div className=" flex flex-col bg-gray-950 text-white">
-            <h2 className="font-bold text-lg text-gray-600 mb-2 hover:text-2xl hover:underline">
-              HOME
+          <div className=" flex flex-col bg-gray-500 text-white">
+            <h2 className="font-bold text-lg text-gray-900 mb-2 hover:text-2xl hover:underline">
+              ABOUT US
             </h2>
-            <span>Services</span>
-            <span>Products</span>
             <span>About Us</span>
-            <span>Pricing</span>
-            <span>Partners New</span>
-          </div>
-          <div className=" flex flex-col bg-gray-950 text-white">
-            <h2 className="font-bold text-lg text-gray-600 mb-2 hover:text-2xl hover:underline">
-              RESOURCES
-            </h2>
-            <span>Documentation</span>
-            <span>Tutorials</span>
-            <span>Support New</span>
-          </div>
-          <div className=" flex flex-col bg-gray-950 text-white">
-            <h2 className="font-bold text-lg text-gray-600 mb-2 hover:text-2xl hover:underline">
-              PRODUCTS
-            </h2>
-            <span>Our Products</span>
-            <span>Great Deals New</span>
-            <span>Analytics</span>
-            <span>Mobile</span>
-          </div>
-          <div className=" flex flex-col bg-gray-950 text-white">
-            <h2 className="font-bold text-lg mb-2 text-gray-600 hover:text-2xl hover:underline">
-              SUPPORT
-            </h2>
-            <span>Help Center</span>
+            <span>Impact</span>
+            <span>Reach & Presence</span>
+            <span>Milestones</span>
             <span>Privacy Policy</span>
-            <span>Conditions</span>
           </div>
-          <div className=" flex flex-col bg-gray-950 text-white">
-            <h2 className="font-bold text-lg text-gray-600 mb-2 hover:text-2xl hover:underline">
-              CONTACT US
+          <div className=" flex flex-col bg-gray-500 text-white">
+            <h2 className="font-bold text-lg text-gray-900 mb-2 hover:text-2xl hover:underline">
+              OUR WORK
             </h2>
-            <span>+91 9305904328</span>
-            <span>Punjab</span>
-            <span>vrtikaaa1811@gmail.com</span>
+            <span>Education</span>
+            <span>Livelihood</span>
+            <span>Health</span>
+            <span>Women Empowerment</span>
+            <span>Disaster Relief</span>
+          </div>
+          <div className=" flex flex-col bg-gray-500 text-white">
+            <h2 className="font-bold text-lg text-gray-900 mb-2 hover:text-2xl hover:underline">
+              CAMPAIGNS
+            </h2>
+            <span>Shiksha Na Ruke</span>
+            <span>Health Cannot Wait</span>
+            <span>Tayyari Kal Ki</span>
+            <span>Swabhiman</span>
+          </div>
+          <div className=" flex flex-col bg-gray-500 text-white">
+            <h2 className="font-bold text-lg mb-2 text-gray-900 hover:text-2xl hover:underline">
+              GET INVOLVED
+            </h2>
+            <span>Individual Support</span>
+            <span>Corporate Partnerships</span>
+            <span>Volunteer Work</span>
+            <span>School Partnerships</span>
+            <span>Careers</span>
+          </div>
+          <div className=" flex flex-col bg-gray-500 text-white">
+            <h2 className="font-bold text-lg text-gray-900 mb-2 hover:text-2xl hover:underline">
+              OUR WORK
+            </h2>
+            <span>Handmade Clothing</span>
+            <span>Handmade Jewellery</span>
+            <span>Wooden Work</span>
           </div>
         </div>
 
         <hr className="my-8 border-b border-gray-600 w-full max-w-7xl mx-auto" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto text-sm">
-          <p className="text-left">Copyright 2024. All Rights Reserved.</p>
+        <div className="flex flex-col md:flex-row justify-between items-start gap-6 px-4 py-6  max-w-6xl mx-auto text-l">
+          <div className="flex flex-col max-w-3xl">
+          <p className="text-left mb-2">161 B/4, 3rd Floor, Gulmohar House, Yusuf Sarai Community Centre New Delhi - 110049 Delhi, India.</p>
+          <br/>
+          <p className="text-left">Contact Us: Tel: +91-11-43123700 | E-mail: info@smilefoundationindia.org.</p>
+          </div>
           <Image
             src="/images/socialicons.jpg"
             className="mt-4 md:mt-0"
             alt="socialicons"
-            width={120}
-            height={120}
+            width={160}
+            height={160}
           />
         </div>
       </div>
