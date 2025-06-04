@@ -60,9 +60,9 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-6 px-4 py-6  max-w-6xl mx-auto text-l">
           <div className="flex flex-col max-w-3xl">
-          <p className="text-left mb-2">161 B/4, 3rd Floor, Gulmohar House, Yusuf Sarai Community Centre New Delhi - 110049 Delhi, India.</p>
+          <p className="text-left mb-2">161 B/8, 3rd Floor, Gulmohar House, Yusuf Sarai Community Centre New Delhi - 110047 Delhi, India.</p>
           <br/>
-          <p className="text-left">Contact Us: Tel: +91-11-43123700 | E-mail: info@smilefoundationindia.org.</p>
+          <p className="text-left">Contact Us: Tel: +91-11-43123700 | E-mail: info@littlehopeindia.org.</p>
           </div>
           <Image
             src="/images/socialicons.jpg"

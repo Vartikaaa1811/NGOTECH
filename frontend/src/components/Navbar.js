@@ -1,32 +1,51 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <div className="bg-gray-100 py-4">
-    <div className="max-w-6xl mx-auto flex justify-between items-start px-6 ">
-      <div className="flex items-center">
-        <img src="" alt="logo image soon" className="h-20 w-auto"/>
+      <div className="max-w-6xl mx-auto flex justify-between items-start px-6 ">
+        <div className="flex items-center">
+          <img
+            src="/images/ngologo.png"
+            alt="logo image soon"
+            className="h-20 w-auto"
+          />
         </div>
 
+        <div className="flex flex-col items-end space-y-2">
+          <button className="  px-4 py-3 rounded-2xl bg-blue-700 text-sm md:text-base  hover:bg-amber-300 hover:text-black">
+            SUPPORT THE CAUSE
+          </button>
 
-      <div className="flex flex-col items-end space-y-2">
-        <button className="  px-4 py-3 rounded-2xl bg-blue-700 text-sm md:text-base  hover:bg-amber-300 hover:text-black">
-          SUPPORT THE CAUSE
-        </button>
-    
-        <div className="flex flex-wrap justify-end items-center gap-6 ">
-            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">ABOUT US</span>
-            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">OUR WORK</span>
-            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">CAMPAIGNS</span>
-            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">GET INVOLVED</span>
-            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">PRODUCTS</span>
-            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">CONTACT US</span>
+          <div className="flex flex-wrap justify-end items-center gap-6 ">
+            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">
+              ABOUT US
+            </span>
+            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">
+              OUR WORK
+            </span>
+            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">
+              CAMPAIGNS
+            </span>
+            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">
+              GET INVOLVED
+            </span>
+            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">
+              PRODUCTS
+            </span>
+            <span className="text-gray-700 hover:text-blue-500 cursor-pointer">
+              CONTACT US
+            </span>
 
-        <button className=" px-2 py-1 text-sm md:text-base rounded-xl bg-blue-400 text-white hover:bg-amber-300 hover:text-black"> Login/SignUp</button>
+            <button className=" px-2 py-1 text-sm md:text-base rounded-xl bg-blue-400 text-white hover:bg-amber-300 hover:text-black">
+              {" "}
+              Login/SignUp
+            </button>
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
     </div>
   );
 };
