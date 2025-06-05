@@ -14,10 +14,7 @@ export default function Banner() {
         <img src="/images/riral.jpg" alt="img2" />
         <p className="legend">Legend wfare</p>
       </div>
-      <div>
-        <img src="/images/riral.jpg" alt="img3" />
-        <p className="legend">Legendbawfer</p>
-      </div>
+      
       <div>
         <img src="/images/riral.jpg" alt="img4" />
         <p className="legend">Legend gdr </p>
